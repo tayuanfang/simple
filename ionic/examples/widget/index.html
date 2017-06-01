@@ -10,10 +10,17 @@
     <script src="index.js"></script>
 </head>
 <body ng-controller="appCtrl">
-<ion-header-bar class="bar-positive">
-    <h1 class="title">widget</h1>
+<ion-header-bar class="item-input-inset bar-dark">
+    <!--<h1 class="title">widget</h1>-->
+    <label class="item-input-wrapper">
+        <i class="icon ion-ios-search placeholder-icon"></i>
+        <input type="search" placeholder="Search">
+    </label>
+    <button class="button button-clear">Cancel</button>
 </ion-header-bar>
 <ion-content>
+    <div ng-include="'elements/toggle.html'"></div>
+    <div ng-include="'elements/form-input.html'"></div>
     <div ng-include="'elements/card.html'"></div>
     <div ng-include="'elements/buttonlist.html'"></div>
 </ion-content>
