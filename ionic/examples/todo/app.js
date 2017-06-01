@@ -51,15 +51,14 @@ angular.module('ionicApp', ['ionic'])
             scope: $scope,
             animation: 'slide-in-up'
         });
-        $scope.tasks = [];
         $scope.closeNewTask = function() {
             $scope.taskModal.hide();
         };
         $scope.createTask = function(task) {
-            if(!$scope.activeProject || task) {
+            if(!$scope.activeProject || !task) {
                 return;
             }
-            $scope.tasks.push({title: task.title});
+            $scope.activeProject.tasks.push({title: task.title});
             Projects.save($scope.projects);
             $scope.taskModal.hide();
             task.title = "";
