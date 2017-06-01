@@ -1,2 +1,2 @@
 # simple
-projects0601
+Study Projects 0601.
