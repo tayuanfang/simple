@@ -1,0 +1,10 @@
+/*media all*/
+.icon {
+    font-size: 32px;
+}
+table.reference, table.tecspec {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
