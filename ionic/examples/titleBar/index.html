@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>TitleBar</title>
+    <link href="../../css/ionic.css" rel="stylesheet">
+    <!--<link href="index.css" rel="stylesheet">-->
+    <script src="../../js/ionic.bundle.js"></script>
+    <script src="index.js"></script>
+<body ng-app="ionicApp">
+<ion-header-bar align-title="left" class="bar-positive">
+    <div class="buttons">
+        <button class="button">Left Button</button>
+    </div>
+    <h1 class="title">Title</h1>
+    <div class="buttons">
+        <button class="button">Right Button</button>
+    </div>
+</ion-header-bar>
+<ion-content>
+    <ion-list ng-init="items=['1','2','3','4','5','6','7','8','9','0']">
+        <ion-item ng-repeat="item in items">
+            <div class="item-content">{{item}}</div>
+        </ion-item>
+        <ion-item ng-repeat="item in items">
+            <div class="item-content">{{item}}</div>
+        </ion-item>
+    </ion-list>
+</ion-content>
+<ion-footer-bar align-title="left" class="bar-assertive">
+    <div class="buttons">
+        <button class="button">Left Button</button>
+    </div>
+    <h1 class="title">Title</h1>
+    <div class="buttons">
+        <button class="button">Right Button</button>
+    </div>
+</ion-footer-bar>
+</body>
+</html>

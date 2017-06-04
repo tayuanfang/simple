@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Gesture Event</title>
+    <link href="../../css/ionic.css" rel="stylesheet">
+    <!--<link href="index.css" rel="stylesheet">-->
+    <script src="../../js/ionic.bundle.js"></script>
+    <script src="index.js"></script>
+<body ng-app="ionicApp" ng-controller="appCtrl"
+      on-hold="eventlog = 'On long click'"
+      on-tap="eventlog = 'On click'"
+      on-double-tap="eventlog = 'Double click"
+      on-touch="touchlog = 'Start touch"
+      on-release="touchlog = 'Ent touch"
+      on-drag="touchlog = 'Drafting'"
+      on-drag-up="draglog = 'drag up'"
+      on-drag-right="draglog = 'drag right'"
+      on-drag-down="draglog = 'drag down'"
+      on-drag-left="draglog = 'drag left'"
+      on-swipe="eventlog='Start swipe'"
+      on-swipe-up="swipelog='swipe up'"
+      on-swipe-right="swipelog='swipe right'"
+      on-swipe-down="swipelog='swipe down'"
+      on-swipe-left="swipelog='swipe left'">
+<button class="button button-block" >button</button>
+<div ng-init="eventlog='Click event'">{{eventlog}}</div>
+<div ng-init="touchlog='Touch event'">{{touchlog}}</div>
+<div ng-init="draglog='Drag event'">{{draglog}}</div>
+<div ng-init="swipelog='Swipe event'">{{swipelog}}</div>
+</body>
+</html>

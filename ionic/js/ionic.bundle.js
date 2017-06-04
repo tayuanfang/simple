@@ -53217,7 +53217,7 @@ var IonicModule = angular.module('ionic', ['ngAnimate', 'ngSanitize', 'ui.router
  * There are easy ways to cancel out of the action sheet, such as tapping the backdrop or even
  * hitting escape on the keyboard for desktop testing.
  *
- * ![Action Sheet](http://ionicframework.com.s3.amazonaws.com/docs/controllers/actionSheet.gif)
+ * ![Action Sheet](http://ionicframework.com.s3.amazonaws.com/docs/controllers/pullUpMenu.gif)
  *
  * @usage
  * To trigger an Action Sheet in your code, use the $ionicActionSheet service in your angular controllers:
@@ -53294,7 +53294,7 @@ function($rootScope, $compile, $animate, $timeout, $ionicTemplateLoader, $ionicP
    *     the action sheet, or false to keep it opened.
    *  - `{function=}` `destructiveButtonClicked` Called when the destructive button is clicked.
    *     Return true to close the action sheet, or false to keep it opened.
-   *  -  `{boolean=}` `cancelOnStateChange` Whether to cancel the actionSheet when navigating
+   *  -  `{boolean=}` `cancelOnStateChange` Whether to cancel the pullUpMenu when navigating
    *     to a new state.  Default true.
    *  - `{string}` `cssClass` The custom CSS class name.
    *
@@ -53334,7 +53334,7 @@ function($rootScope, $compile, $animate, $timeout, $ionicTemplateLoader, $ionicP
       $rootScope.$on('$stateChangeSuccess', function() { scope.cancel(); }) :
       noop;
 
-    // removes the actionSheet from the screen
+    // removes the pullUpMenu from the screen
     scope.removeSheet = function(done) {
       if (scope.removed) return;
 
