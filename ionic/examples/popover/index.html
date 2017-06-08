@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>popover</title>
+    <link href="../../css/ionic.css" rel="stylesheet">
+    <!--<link href="index.css" rel="stylesheet">-->
+    <script src="../../js/ionic.bundle.js"></script>
+    <script src="index.js"></script>
+</head>
+<body ng-app="ionicApp" ng-controller="appCtrl">
+<ion-header-bar>
+    <h1 class="title">Popover</h1>
+    <a class="button" href="index2.html">Second</a>
+</ion-header-bar>
+<ion-content>
+    <p>
+        <button ng-click="openPopover($event)">Open Float Window</button>
+    </p>
+</ion-content>
+<script id="my-popover.html" type="text/ng-template">
+    <ion-popover-view>
+        <ion-header-bar>
+            <h1 class="title">My float window title</h1>
+        </ion-header-bar>
+        <ion-content>
+            Hello!
+        </ion-content>
+    </ion-popover-view>
+</script>
+</body>
+</html>

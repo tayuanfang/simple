@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="mySuperApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>popover</title>
+    <link href="../../css/ionic.css" rel="stylesheet">
+    <!--<link href="index.css" rel="stylesheet">-->
+    <script src="../../js/ionic.bundle.js"></script>
+    <script src="index.js"></script>
+</head>
+<body class="padding" ng-controller="PopupCtrl">
+    <button class="button button-dark" ng-click="showPopup()">Popup window display</button>
+    <button class="button button-primary" ng-click="showConfirm()">Confirm dialog</button>
+    <button class="button button-positive" ng-click="showAlert()">Warning dialog</button>
+<script id="popup-template.html" type="text/ng-template">
+    <input ng-model="data.wifi" type="text" placeholder="Password">
+</script>
+</body>
+</html>
